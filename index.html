@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Carson Schulz
+  </title>
+  <meta content="Portfolio site made by Carson Schulz" name="description"/>
+  <link href="favicon.ico" rel="icon" sizes="16x16" type="image/x-icon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ </head>
+ <body>
+  <main class="space-y-20 2xl:space-y-40 text-zinc-400 bg-zinc-900">
+   <header class="relative flex flex-wrap md:items-center min-h-screen">
+    <div class="md:absolute top-0 left-0 w-full">
+     <nav class="container px-4 mx-auto flex items-center justify-center md:justify-between pt-8 pb-16 md:py-10 text-violet-400 tracking-wide">
+      <ul class="flex items-center space-x-8">
+       <li>
+        <a class="hover:text-violet-500 duration-300 transition-colors" href="#projects">
+         Projects
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-violet-500 duration-300 transition-colors" href="#about">
+         About
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-violet-500 duration-300 transition-colors" href="docs/resume.pdf" target="_blank" rel="noopener">
+         Resume
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-violet-500 duration-300 transition-colors" href="mailto:schulzcarson@gmail.com">
+         Contact
+        </a>
+       </li>
+      </ul>
+      <ul class="hidden md:flex items-center space-x-8 text-2xl">
+       <li>
+        <a class="hover:text-violet-500 duration-300 transition-colors" href="https://www.linkedin.com/in/carson-schulz/" target="_blank" rel="noopener" title="LinkedIn">
+         <svg fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" viewbox="0 0 448 512" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+          </path>
+         </svg>
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-violet-500 duration-300 transition-colors" href="https://github.com/CarsonSchulz" target="_blank" rel="noopener" title="GitHub">
+         <svg fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" viewbox="0 0 496 512" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+          </path>
+         </svg>
+        </a>
+       </li>
+       <li>
+        <a class="hover:text-violet-500 duration-300 transition-colors" href="https://www.upwork.com/freelancers/~01c454e3c1c82a4e37?s=1110580755107926016" target="_blank" rel="noopener" title="Upwork">
+         <svg fill="currentColor" height="1em" role="img" stroke="currentColor" stroke-width="0" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <title>
+          </title>
+          <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z">
+          </path>
+         </svg>
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+    <div class="container px-4 mx-auto">
+     <div class="space-y-4 mb-10">
+      <span class="text-lg md:text-[28px] block font-semibold text-violet-400 tracking-wide">
+       Hello there, I'm
+      </span>
+      <h1 class="text-4xl md:text-6xl font-semibold text-white">
+       Carson Schulz.
+      </h1>
+      <p class="text-4xl md:text-6xl font-semibold">
+       <span>
+        I create
+       </span>
+       <span id="typing-target" class="index-module_type__E-SaG block w-full md:inline md:w-auto text-violet-400">applications</span><span class="typing-cursor text-violet-400" aria-hidden="true">|</span>
+       <span class="md:block xl:inline md:w-full xl:w-auto">
+        for the web.
+       </span>
+      </p>
+     </div>
+     <div class="md:w-2/3 lg:w-1/2">
+      <p class="text-lg md:text-xl">
+       I am a full-stack engineer based in
+       <u>
+        Tampa, FL
+       </u>
+       with a affinity for building eye-catching websites, powerful applications, and almost everything in between.
+       <a class="text-violet-400 hover:text-violet-500 ease-in-out duration-200 transition-colors" href="docs/resume.pdf" target="_blank" rel="noopener">
+        See my resume
+       </a>
+       or
+       <a class="text-violet-400 hover:text-violet-500 ease-in-out duration-200 transition-colors" href="mailto:schulzcarson@gmail.com">
+        get in touch
+       </a>
+       .
+      </p>
+     </div>
+    </div>
+   </header>
+   <section class="container px-4 mx-auto" id="projects">
+    <h2 class="mb-8 lg:mb-20 text-3xl md:text-4xl font-semibold tracking-wider text-white">
+     Featured Projects
+    </h2>
+    <div class="space-y-28">
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-32">
+      <div class="relative min-h-[400px] order-first">
+       <div class="absolute top-0 left-0 w-[95%] h-[95%] rounded-md z-20">
+        <div class="absolute w-full h-full rounded-md opacity-10 bg-gradient-to-tl from-indigo-300 to-purple-400 z-10">
+        </div>
+        <img alt="Coefficient" class="object-cover rounded-md" data-nimg="fill" decoding="async" loading="lazy" sizes="100vw" src="images/coeff.webp" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+       </div>
+       <div class="absolute right-0 bottom-0 w-[95%] h-[95%] bg-violet-400/10 rounded-md">
+       </div>
+      </div>
+      <div class="py-5 space-y-5 self-center">
+       <h3 class="text-4xl text-white font-semibold tracking-wider">
+        Coefficient
+       </h3>
+       <div class="flex flex-wrap 2xl:space-x-2">
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          WordPress
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          PHP
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          MySQL
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          React
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          SCSS
+         </div>
+        </div>
+       </div>
+       <p class="text-lg md:text-xl font-light">
+        As the lead developer, I went into Coefficient with a relatively blank slate. With the help of this startup's designer, I crafted an extendable and feature packed WordPress site. This theme was custom built from Underscores and features some SEO pack-ins with custom plugins.
+       </p>
+       <div class="flex items-center space-x-6 text-violet-400 font-medium">
+        <a class="hover:text-violet-500 duration-200 ease-in-out" href="https://coefficient.io/" target="_blank" rel="noopener">
+         Site URL
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-32">
+      <div class="relative min-h-[400px] lg:order-last">
+       <div class="absolute top-0 left-0 w-[95%] h-[95%] rounded-md z-20">
+        <div class="absolute w-full h-full rounded-md opacity-10 bg-gradient-to-tl from-indigo-300 to-purple-400 z-10">
+        </div>
+        <img alt="Signature Kitchens" class="object-cover rounded-md" data-nimg="fill" decoding="async" loading="lazy" sizes="100vw" src="images/sig-kitchens.webp" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+       </div>
+       <div class="absolute right-0 bottom-0 w-[95%] h-[95%] bg-violet-400/10 rounded-md">
+       </div>
+      </div>
+      <div class="py-5 space-y-5 self-center">
+       <h3 class="text-4xl text-white font-semibold tracking-wider">
+        Signature Kitchens
+       </h3>
+       <div class="flex flex-wrap 2xl:space-x-2">
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          WordPress
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          JavaScript
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          SCSS
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          PHP
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          MySQL
+         </div>
+        </div>
+       </div>
+       <p class="text-lg md:text-xl font-light">
+        Starting as a solo freelance project — Signature Kitchens was my lead project during my time working at Designzillas. For this project, design was provided using Figma and was replicated in exact detail. This was built using a custom Underscores WordPress theme.
+       </p>
+       <div class="flex items-center space-x-6 text-violet-400 font-medium">
+        <a class="hover:text-violet-500 duration-200 ease-in-out" href="https://signaturekitchens.com/" target="_blank" rel="noopener">
+         Site URL
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-32">
+      <div class="relative min-h-[400px] order-first">
+       <div class="absolute top-0 left-0 w-[95%] h-[95%] rounded-md z-20">
+        <div class="absolute w-full h-full rounded-md opacity-10 bg-gradient-to-tl from-indigo-300 to-purple-400 z-10">
+        </div>
+        <img alt="Star Roses &amp; Plants" class="object-cover rounded-md" data-nimg="fill" decoding="async" loading="lazy" sizes="100vw" src="images/srp.webp" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+       </div>
+       <div class="absolute right-0 bottom-0 w-[95%] h-[95%] bg-violet-400/10 rounded-md">
+       </div>
+      </div>
+      <div class="py-5 space-y-5 self-center">
+       <h3 class="text-4xl text-white font-semibold tracking-wider">
+        Star Roses &amp; Plants
+       </h3>
+       <div class="flex flex-wrap 2xl:space-x-2">
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          WordPress
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          MySQL
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          PHP
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          SCSS
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          WooCommerce
+         </div>
+        </div>
+       </div>
+       <p class="text-lg md:text-xl font-light">
+        Star Roses and Plants was a agency project spearheaded by me. Brought in to facilitate some broken Elementor pages, the project quickly expanded into a complete site rebuild with WooCommerce integrations.
+       </p>
+       <div class="flex items-center space-x-6 text-violet-400 font-medium">
+        <a class="hover:text-violet-500 duration-200 ease-in-out" href="https://www.starrosesandplants.com/" target="_blank" rel="noopener">
+         Site URL
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-32">
+      <div class="relative min-h-[400px] lg:order-last">
+       <div class="absolute top-0 left-0 w-[95%] h-[95%] rounded-md z-20">
+        <div class="absolute w-full h-full rounded-md opacity-10 bg-gradient-to-tl from-indigo-300 to-purple-400 z-10">
+        </div>
+        <img alt="Orlando Economic Partnership" class="object-cover rounded-md" data-nimg="fill" decoding="async" loading="lazy" sizes="100vw" src="images/oep.webp" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+       </div>
+       <div class="absolute right-0 bottom-0 w-[95%] h-[95%] bg-violet-400/10 rounded-md">
+       </div>
+      </div>
+      <div class="py-5 space-y-5 self-center">
+       <h3 class="text-4xl text-white font-semibold tracking-wider">
+        Orlando Economic Partnership
+       </h3>
+       <div class="flex flex-wrap 2xl:space-x-2">
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          WordPress
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          MySQL
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          PHP
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          SCSS
+         </div>
+        </div>
+        <div class="pr-2 pb-2 2xl:p-0">
+         <div class="px-3 py-1 text-xs rounded-full font-semibold tracking-wider text-violet-400 bg-violet-300/20">
+          JavaScript
+         </div>
+        </div>
+       </div>
+       <p class="text-lg md:text-xl font-light">
+        With this project, I played a critical role within a team of developers and designers to provide a facelift to partnership pages and provide client solutions to facilitate future content additions.
+       </p>
+       <div class="flex items-center space-x-6 text-violet-400 font-medium">
+        <a class="hover:text-violet-500 duration-200 ease-in-out" href="https://orlando.org/" target="_blank" rel="noopener">
+         Site URL
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="container px-4 mx-auto">
+    <h2 class="mb-8 lg:mb-20 text-3xl md:text-4xl font-semibold tracking-wider text-white">
+     Other Projects
+    </h2>
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10 xl:gap-16">
+     <a class="group relative p-1 rounded-md transition-all duration-200 ease-in-out" href="https://www.universityaudit.ucf.edu/" target="_blank" rel="noopener">
+      <div class="relative h-full space-y-4 bg-zinc-800 p-12 rounded-md z-10">
+       <h3 class="text-2xl 2xl:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 to-purple-400">
+        UCF Audit
+       </h3>
+       <p>
+        This was the website I created for the UCF Audit team during my tenure at the university. This site uses no CMS but utilizes the Bootstrap framework based on university styling.
+       </p>
+      </div>
+      <div class="absolute top-0 left-0 w-full h-full opacity-0 rounded-md bg-gradient-to-br from-indigo-300 to-purple-400 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+      </div>
+     </a>
+     <a class="group relative p-1 rounded-md transition-all duration-200 ease-in-out" href="https://spaceadmin.provost.ucf.edu" target="_blank" rel="noopener">
+      <div class="relative h-full space-y-4 bg-zinc-800 p-12 rounded-md z-10">
+       <h3 class="text-2xl 2xl:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 to-purple-400">
+        UCF Space Administration
+       </h3>
+       <p>
+        Just as some of my other UCF websites, this was constructed using a Bootstrap framework based on university styleguides.
+       </p>
+      </div>
+      <div class="absolute top-0 left-0 w-full h-full opacity-0 rounded-md bg-gradient-to-br from-indigo-300 to-purple-400 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+      </div>
+     </a>
+     <a class="group relative p-1 rounded-md transition-all duration-200 ease-in-out" href="https://github.com/CarsonSchulz/UCF-Knugget-Theme" target="_blank" rel="noopener">
+      <div class="relative h-full space-y-4 bg-zinc-800 p-12 rounded-md z-10">
+       <h3 class="text-2xl 2xl:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-indigo-300 to-purple-400">
+        UCF Knugget Theme
+       </h3>
+       <p>
+        One of the first child themes I ever built for use in UCF Department websites. Utilized brand guides and accordance to university policies.
+       </p>
+      </div>
+      <div class="absolute top-0 left-0 w-full h-full opacity-0 rounded-md bg-gradient-to-br from-indigo-300 to-purple-400 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+      </div>
+     </a>
+    </div>
+   </section>
+   <section class="container px-4 mx-auto" id="about">
+    <div class="lg:w-10/12 2xl:w-2/3 mx-auto">
+     <div class="grid grid-cols-12 gap-7 md:gap-16 items-center">
+      <div class="col-span-12 md:col-span-6 lg:col-span-8">
+       <h3 class="mb-4 text-5xl font-semibold tracking-wide text-white">
+        About me.
+       </h3>
+       <div class="text-lg">
+        <div class="space-y-6">
+         <p>
+          My name is Carson Schulz and I am full-stack engineer working remotely but based in Tampa, Florida. I have been developing web sites, WordPress content, React applications, and far more for the past ten years. Over that time, I have had the opportunity to work with a variety of environments, tools, languages, and individuals that have all helped shape the way I work.
+         </p>
+         <p>
+          If you have any questions or want to learn how I can help your projects, please feel free to reach out!
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-span-12 md:col-span-6 lg:col-span-4 h-[270px] order-first md:order-last">
+       <div class="relative w-10/12 md:w-full h-full mx-auto">
+        <div class="absolute top-0 right-0 w-[95%] h-[95%] rounded-md z-10">
+         <img alt="Carson" class="object-cover rounded-md" data-nimg="fill" decoding="async" loading="lazy" sizes="100vw" src="images/me.webp" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+        </div>
+        <div class="absolute left-0 bottom-0 w-[95%] h-[95%] bg-violet-400/10 rounded-md">
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <footer class="container px-4 mx-auto flex justify-between pb-6">
+    <div>
+     <ul class="flex items-center space-x-8 text-2xl text-violet-400">
+      <li>
+       <a class="hover:text-violet-500 duration-300 transition-colors" href="https://www.linkedin.com/in/carson-schulz/" target="_blank" rel="noopener" title="LinkedIn">
+        <svg fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" viewbox="0 0 448 512" width="1em" xmlns="http://www.w3.org/2000/svg">
+         <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+         </path>
+        </svg>
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-violet-500 duration-300 transition-colors" href="https://github.com/CarsonSchulz" target="_blank" rel="noopener" title="GitHub">
+        <svg fill="currentColor" height="1em" stroke="currentColor" stroke-width="0" viewbox="0 0 496 512" width="1em" xmlns="http://www.w3.org/2000/svg">
+         <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+         </path>
+        </svg>
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-violet-500 duration-300 transition-colors" href="https://www.upwork.com/freelancers/~01c454e3c1c82a4e37?s=1110580755107926016" target="_blank" rel="noopener" title="Upwork">
+        <svg fill="currentColor" height="1em" role="img" stroke="currentColor" stroke-width="0" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+         <title>
+         </title>
+         <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z">
+         </path>
+        </svg>
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     &copy; 2026 Carson Schulz
+    </div>
+   </footer>
+  </main>
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-TP77BWBJ" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script src="js/page.js"></script>
+ </body>
+</html>
